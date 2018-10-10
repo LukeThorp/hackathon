@@ -1,0 +1,81 @@
+html {
+    overflow-y: hidden;
+}
+body {
+    background-color: #FFFFFF;
+}
+.center-box {
+    position: fixed;
+    height: 40px;
+    top: 20%;
+    width: 100%;
+}
+.center {
+  font-family: "AvenirNextLTW01-Demi","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px;
+  position: fixed;
+    height: 2px;
+    width: 100px;
+    left:50%;
+    margin-left: -50px;
+    position:absolute;
+  
+}
+.p2 {
+	 font-family: "AvenirNextLTW01-Demi","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 26px;
+}
+.about-bar {
+    position: fixed;
+    height: 250px;
+    bottom: 120px;
+    width: 100%;
+}
+.about-div {
+    font-family: "AvenirNextLTW01-Demi","Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 14px;
+    text-align: center;
+    height: 2px;
+    width: 350px;
+    left:50%;
+    margin-left: -185px;
+    position:absolute;
+    color: #5e5e5e;
+}
+.nav-bar {
+    position: fixed;
+    height: 40px;
+    bottom: 10px;
+    width: 100%;
+}
+.nav-line {
+    background-color: #6E6E6E;
+    height: 2px;
+    width: 500px;
+    left:50%;
+    margin-left: -250px;
+    position:absolute;
+}
+.nav-text {
+    margin-top: 10px;
+    font-family: 'Raleway';font-size: 14px;
+    color: #5e5e5e;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+a:link {
+    color: #5e5e5e;
+    text-decoration: none;
+}
+a:hover {
+    color:white;
+    text-decoration: underline;
+}
+a:active {
+    color:white;
+    text-decoration: underline;
+}
+a:visited {
+   color: #5e5e5e;
+   text-decoration: none;
+}
