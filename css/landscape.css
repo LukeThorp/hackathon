@@ -42,7 +42,7 @@ body {
 .nav-bar {
     position: fixed;
     height: 40px;
-    bottom: 10px;
+    bottom: 15px;
     width: 100%;
 }
 .nav-line {
