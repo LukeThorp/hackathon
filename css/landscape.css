@@ -48,9 +48,9 @@ body {
 .nav-line {
     background-color: #6E6E6E;
     height: 2px;
-    width: 350px;
+    width: 380px;
     left:50%;
-    margin-left: -185px;
+    margin-left: -190px;
     position:absolute;
 }
 .nav-text {
