@@ -1,118 +1,141 @@
-<!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Co-op Hack</title>
-    <link rel="stylesheet" media="all and (orientation:portrait)" href="css/portrait.css">
-    <link rel="stylesheet" media="all and (orientation:landscape) and (max-device-height: 700px)" href="css/landscape.css">
-    <link rel="stylesheet" media="all and (orientation:landscape) and (min-device-height: 700px)" href="css/portrait.css">
-</head>
-<body>
-    <div class="center-box">
-	<div class="center">
-            <img src="https://alexwblobaccount.blob.core.windows.net/hackimage/coop-hackathon-branding-01.jpg" height="150" width="450">
-        <p style="color:#282828; font-weight:bold;">8th & 9th November</p>
-        <span style="margin-right:15px;"><a href="#" onclick="toggle_visibility('about')"><font color="#166D66">About</font></a></span>
-        <span><a href="#" onclick="toggle_visibility('faq')"><font color="#166D66">FAQ</font></a></span><br><br>
-        <div>
-            Click the numbers to see the Challenges: <br>
-            <span style="margin-right:15px;margin-left:15px"><a href="#" onclick="toggle_visibility('challenge1')"><font color="#166D66">One</font></a></span>
-            <span style="margin-right:15px;"><a href="#" onclick="toggle_visibility('challenge2')"><font color="#166D66">Two</font></a></span>
-            <span><a href="#" onclick="toggle_visibility('challenge3')"><font color="#166D66">Three</font></a></span>
-        </div>
-    </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <div class="about-bar">
-        <div class="about-div" id="challenge1" style="visibility: hidden;font-size:14px;overflow-y: auto;height: 300px;">
-					<p><b>Help food colleagues better manage gaps on shelves</b></p>
-					<p>How annoying is it, when you pop to The Co-op for your lunch, and they have run out of your favourite sandwich or salad.  If only you have been there 30 minutes sooner.  Or even 30 minutes later once a store colleague has had time to put out extra stock.  “Oops, sorry, sorry.”  I’m now in the way, blocking up the aisle trying to decide what to get instead. Boy it is busy in here at lunchtimes…</p>
-                    <p>At The Co-op we have an established daily process called the Gap Scan to inform supply chain about stock issues.  But this doesn’t necessarily reflect what the customer experiences on shelf on a minute-by-minute basis.  This forms the basis of the challenge: To use sales data to estimate, at as fine a time interval as possible, when something might have gone awry with a customer’s ability to buy a product.</p><br>
-        </div>
-        <div class="about-div" id="challenge2" style="visibility: hidden;font-size:14px;overflow-y: auto;height: 300px;">
-					<p><b>Improve Funeralcare's allocation of people and ceremonial vehicles to funerals</b></p>
-					<p>We'll have data that shows historical funerals, when and where they were and what resources they consumed. We'll also have data on resources including where they're based and how they get used. <br>
-Example outputs - inform the business on why there are inconsistencies across the country, how to improve resource use, visualise the data in a way that tells a useful story, create an app that helps operations colleagues make resource decisions.</p><br>
-        </div>
-        <div class="about-div" id="challenge3" style="visibility: hidden;font-size:14px;overflow-y: auto;height: 300px;">
-					<p><b>1AS room booking data revamp</b></p>
-					<p>We'll have anonymised room bookings, meeting titles, when and where. <br>
-Example outputs - how could we better use our space in 1AS, what patterns are causing people to find there's no space, make a new room booking software that's better for users than the current one.</p><br>
-        </div>
-        <div class="about-div" id="faq" style="visibility: hidden;font-size:14px;overflow-y: auto;height: 300px;">
-            <p><b>Do I have to be available for both days?</b></p>
-					<p>No you can drop in an out or just spend the time you can helping the teams.</p>
-            <p><b>Is the data secure?</b></p>
-                    <p>Yes. All the storage and compute environments have been agreed with Group Infosec and provisioned by Group IT.<br>
-                    Data owners are aware and supportive of the event and all resources, including storage, will be deprovisioned afterwards.</p>
-            <p><b>Will it be competitive?</b></p>
-                    <p>No, this is about meeting new colleagues and collaborating on some business challenges together. <br>
-                        There may be some prizes for taking part though!</p>
-            <p><b>I'm not very "technical", will I be of any use?</b></p>
-					<p>Yes! We need and welcomes people of all skills and abilities from across the business.</p>
-		</div>
-        <div class="about-div" id="about" style="visibility: visible;font-size:14px;overflow-y: auto;height: 300px;">
-            <iframe width="350" height="196" src="https://www.youtube.com/embed/mmImYTY8Bvw" frameborder="0" allowfullscreen></iframe>
-            <p>At The Co-op Hackathon 2018, we are bringing together Data Analysts, BI Analysts, Data Engineers, Web
-                Developers and many others from around the whole of The Co-op to demystify some of our data sink holes.
-                To do this we have set out three difficult but fun challenges from accross The Co-op's business units.
-                We have one from Food, one from Funeralcare and one from Property. All of these challenges have been
-                planned over the last few months so that both days flow smoothly and we will have domain experts
-                available to answer any inevitable questions.</p>
-            <p>It is worth noting that all of the data used on the day has been authorised for use and the environments
-            used for storing data will be safe. We will still give teams free reign to solve the tasks in inventive
-                ways, because that is what you are all good at!</p>
-        </div>
-    </div>
-    
-    <div class="nav-bar">
-        <div class="nav-line">
-        </div>
-        <div class="center-box" style="font-size:15px; color:#00b1e7; text-align: justify;">
-            <div class="center">
-            <br>
-            <b> Everyone welcome. To get involved please email:</b> <br>
-			alex.waters@coopdigital.co.uk &emsp; luke.thorp@coopdigital.co.uk
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <title>Co-op Data Hack</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+
+      <div class="row justify-content-center">
+
+          <div class="col-7 mt-5">
+            <img src="https://alexwblobaccount.blob.core.windows.net/hackimage/coop-hackathon-branding-01.jpg" width="100%">
+          </div>
+
+      </div>
+
+      <!--       
+      <div class="row justify-content-center">
+
+          <div class="col-7 mt-5">
+            <h1>Co-op Data Hackathon</h1>
+          </div>
+
+      </div>
+      -->
+
+      <div class="row justify-content-center">
+
+          <div class="col-7 mt-2">
+            <h3>8th &amp; 9th November</h3>
+          </div>
+
+      </div>
+
+      <div class="row justify-content-center">
+
+          <div class="col-7 mt-5">
+            <p>
+              At The Co-op Data Hackathon 2018, we are bringing together Data Analysts, BI Analysts, Data Engineers, Web Developers and many others from around the whole of The Co-op to demystify some of our data sink holes. To do this we have set out three difficult but fun challenges from accross The Co-op's business units. We have one from Food, one from Funeralcare and one from Property. All of these challenges have been planned over the last few months so that both days flow smoothly and we will have domain experts available to answer any inevitable questions.
+            </p>
+
+            <p>
+              It is worth noting that all of the data used on the day has been authorised for use and the environments used for storing data will be safe. We will still give teams free reign to solve the tasks in inventive ways, because that is what you are all good at!
+            </p>
+          </div>
+
+      </div>
+
+      <div class="row justify-content-center">
+
+          <div class="col-7 mt-5">
+            <h3>Challenges</h3>
+          </div>
+
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-2 mt-5">
+          <div class="card" style="width: 18rem;">
             
+            <div class="card-body">
+              <h5 class="card-title">Help food colleagues better manage gaps on shelves</h5>
+              <p class="card-text">How annoying is it, when you pop to The Co-op for your lunch, and they have run out of your favourite sandwich or salad.  If only you have been there 30 minutes sooner.  Or even 30 minutes later once a store colleague has had time to put out extra stock.  “Oops, sorry, sorry.”  I’m now in the way, blocking up the aisle trying to decide what to get instead. Boy it is busy in here at lunchtimes... <br>At The Co-op we have an established daily process called the Gap Scan to inform supply chain about stock issues.  But this doesn’t necessarily reflect what the customer experiences on shelf on a minute-by-minute basis.  This forms the basis of the challenge: To use sales data to estimate, at as fine a time interval as possible, when something might have gone awry with a customer’s ability to buy a product.</p>
+            </div>
+          </div>
         </div>
-    </div>
+
+        <div class="col-2 mt-5 ml-4">
+          <div class="card" style="width: 18rem;">
+            
+            <div class="card-body">
+              <h5 class="card-title">Improve Funeralcare's allocation of people and ceremonial vehicles to funerals</h5>
+              <p class="card-text">We'll have data that shows historical funerals, when and where they were and what resources they consumed. We'll also have data on resources including where they're based and how they get used. <br>
+              Example outputs - inform the business on why there are inconsistencies across the country, how to improve resource use, visualise the data in a way that tells a useful story, create an app that helps operations colleagues make resource decisions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2 mt-5 ml-4">
+          <div class="card" style="width: 18rem;">
+            
+            <div class="card-body">
+              <h5 class="card-title">1AS room booking data revamp</h5>
+              <p class="card-text">We'll have anonymised room bookings, meeting titles, when and where. <br>
+              Example outputs - how could we better use our space in 1AS, what patterns are causing people to find there's no space, make a new room booking software that's better for users than the current one.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row justify-content-center">
+
+          <div class="col-7 mt-5">
+            <h3>FAQs</h3>
+            <p><b>Do I have to be available for both days?</b></p>
+            <p>No you can drop in an out or just spend the time you can helping the teams.</p>
+            <p><b>Is the data secure?</b></p>
+            <p>Yes. All the storage and compute environments have been agreed with Group Infosec and provisioned by Group IT.<br>
+            Data owners are aware and supportive of the event and all resources, including storage, will be deprovisioned afterwards.</p>
+            <p><b>Will it be competitive?</b></p>
+            <p>No, this is about meeting new colleagues and collaborating on some business challenges together. <br>
+            There may be some prizes for taking part though!</p>
+            <p><b>I'm not very "technical", will I be of any use?</b></p>
+            <p>Yes! We need and welcomes people of all skills and abilities from across the business.</p>
+          </div>
+
+      </div>
 
     </div>
 
-    
+    <div class="row justify-content-center">
 
-<script type="text/javascript">
-    document.getElementById("about").style.visibility = "visible";
-    function toggle_visibility(String) {
-        if (String == "challenge1") {
-            document.getElementById("challenge1").style.visibility = "visible";
-            document.getElementById("challenge2").style.visibility = "hidden";
-            document.getElementById("challenge3").style.visibility = "hidden";
-            document.getElementById("faq").style.visibility = "hidden";
-            document.getElementById("about").style.visibility = "hidden";
-        } else if (String == "challenge2") {
-            document.getElementById("challenge1").style.visibility = "hidden";
-            document.getElementById("challenge2").style.visibility = "visible";
-            document.getElementById("challenge3").style.visibility = "hidden";
-            document.getElementById("faq").style.visibility = "hidden";
-            document.getElementById("about").style.visibility = "hidden";
-        } else if (String == "challenge3") {
-            document.getElementById("challenge1").style.visibility = "hidden";
-            document.getElementById("challenge2").style.visibility = "hidden";
-            document.getElementById("challenge3").style.visibility = "visible";
-            document.getElementById("faq").style.visibility = "hidden";
-            document.getElementById("about").style.visibility = "hidden";
-        } else if (String == "faq") {
-            document.getElementById("challenge1").style.visibility = "hidden";
-            document.getElementById("challenge2").style.visibility = "hidden";
-            document.getElementById("challenge3").style.visibility = "hidden";
-            document.getElementById("faq").style.visibility = "visible";
-            document.getElementById("about").style.visibility = "hidden";
-        } else {
-            document.getElementById("challenge1").style.visibility = "hidden";
-            document.getElementById("challenge2").style.visibility = "hidden";
-            document.getElementById("challenge3").style.visibility = "hidden";
-            document.getElementById("faq").style.visibility = "hidden";
-            document.getElementById("about").style.visibility = "visible";
-        }
-    }
-</script></body></html>
+      <div class="col-7 mt-5">
+        <p>
+          <strong>Everyone welcome. To get involved please email:</strong> <br>
+          alex.waters@coopdigital.co.uk &emsp; luke.thorp@coopdigital.co.uk
+        </p>
+      </div>
+
+      </div>
+
+      <div class="row justify-content-center">
+
+      <div class="col-12 mt-5">
+        <div style="height:200px;background-color:#00B1E7;"></div>
+      </div>
+
+      </div>
+
+    <!-- JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
